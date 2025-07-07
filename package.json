@@ -2,7 +2,7 @@
   "name": "nora-proto",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://italzenergy.github.io/it",
+
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
