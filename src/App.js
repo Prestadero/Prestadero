@@ -52,7 +52,7 @@ const AppContent = () => {
 
 function App() {
   return (
-    <Router basename="/it">
+    <Router basename="">
       <AppContent />
     </Router>
   );
