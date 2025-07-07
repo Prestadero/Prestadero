@@ -1,0 +1,377 @@
+/* src/pages/Login.css */
+.prestadero-split-login-container {
+  display: flex;
+  min-height: 100vh;
+  background: #ffffff;
+  position: relative;
+}
+
+/* Botón de regreso */
+.prestadero-back-button {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.prestadero-back-button:hover {
+  background: #ffcc00;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Columna izquierda - Imagen de fondo */
+.prestadero-login-left {
+  flex: 1;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.7), 
+    rgba(0, 0, 0, 0.7)), 
+    url('https://images.unsplash.com/photo-1604594849809-dfedbc827105?ixlib=rb-4.0.3') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.prestadero-brand-overlay {
+  text-align: center;
+  padding: 30px;
+  color: white;
+  max-width: 600px;
+  z-index: 1;
+}
+
+.prestadero-logo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.prestadero-logo-main {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffcc00;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.prestadero-logo-sub {
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+.prestadero-brand-overlay h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.prestadero-brand-overlay p {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+/* Columna derecha - Formulario */
+.prestadero-login-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #ffcc00;
+}
+
+.prestadero-login-card {
+  width: 100%;
+  max-width: 450px;
+  background: rgb(0, 0, 0);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.prestadero-login-header {
+  padding: 30px 30px 20px;
+  text-align: center;
+}
+
+.prestadero-login-header h2 {
+  font-size: 1.8rem;
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.prestadero-login-header p {
+  color: #ffcc00;
+  font-size: 1rem;
+}
+
+.prestadero-login-form {
+  padding: 30px ;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.prestadero-input-group {
+  margin-bottom: 15px;
+}
+
+.prestadero-input-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #ffcc00;
+  font-size: 0.95rem;
+}
+
+.prestadero-input-icon {
+  margin-right: 10px;
+  color: #ffcc00;
+}
+
+.prestadero-input-field {
+  width: 92%;
+  padding: 14px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.prestadero-input-field:focus {
+  border-color: #ffcc00;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.15);
+}
+
+.prestadero-input-field::placeholder {
+  color: #999;
+}
+
+.prestadero-options-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+.prestadero-remember {
+  display: flex;
+  align-items: center;
+  color: #ffcc00;
+}
+
+.prestadero-checkbox {
+  margin-right: 8px;
+  accent-color: #ffcc00;
+}
+
+.prestadero-remember-label {
+  color: #666666;
+  font-size: 0.9rem;
+}
+
+.prestadero-forgot-link {
+  color: #ffcc00;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.prestadero-forgot-link:hover {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+.prestadero-login-button {
+  background: #ffcc00;
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.prestadero-login-button:hover {
+  background: #ffcc00;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.prestadero-divider {
+  display: flex;
+  align-items: center;
+  margin: 25px 0;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.prestadero-divider::before,
+.prestadero-divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #eee;
+}
+
+.prestadero-divider::before {
+  margin-right: 15px;
+}
+
+.prestadero-divider::after {
+  margin-left: 15px;
+}
+
+.prestadero-social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+
+.prestadero-social-button:hover {
+  background: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.prestadero-social-icon {
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+
+
+
+.prestadero-register-link {
+  text-align: center;
+  color: #666;
+  font-size: 0.95rem;
+  margin-top: 25px;
+  padding-bottom: 20px;
+}
+
+.prestadero-register-text {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.prestadero-register-text:hover {
+  color: #ffff5b;
+  text-decoration: underline; 
+}
+
+/* Responsive - Apilamiento vertical en móviles */
+@media (max-width: 768px) {
+  .prestadero-split-login-container {
+    flex-direction: column;
+  }
+  
+  .prestadero-login-left {
+    padding: 40px 20px;
+    flex: 0.8;
+  }
+  
+  .prestadero-logo-main {
+    font-size: 2.2rem;
+  }
+  
+  .prestadero-logo-sub {
+    font-size: 1.1rem;
+  }
+  
+  .prestadero-brand-overlay h2 {
+    font-size: 1.5rem;
+  }
+  
+  .prestadero-brand-overlay p {
+    font-size: 1rem;
+  }
+  
+  .prestadero-login-right {
+    padding: 40px 20px;
+  }
+  
+  .prestadero-options-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  /* Responsive para el botón de regreso */
+  .prestadero-back-button {
+    top: 15px;
+    left: 15px;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 480px) {
+  .prestadero-login-card {
+    border-radius: 12px;
+    
+  }
+  
+  .prestadero-login-header {
+    padding: 25px 15px 15px;
+  }
+  
+  .prestadero-login-form {
+    padding: 0 20px 20px;
+  }
+}
+/* ============================================== */
+/* REGLAS PARA OCULTAR NAVBAR EN PÁGINA DE LOGIN */
+/* ============================================== */
+
+/* Ocultar navbar en página de login */
+body.login-page .navbar {
+  display: none !important;
+}
+
+/* Asegurar que no haya espacio reservado */
+body.login-page {
+  padding-top: 0 !important;
+}
+
+/* Ajustar posición del botón de regreso */
+body.login-page .prestadero-back-button {
+  top: 25px;
+  left: 25px;
+}
+
+/* En móviles, ajustar posición del botón de regreso */
+@media (max-width: 768px) {
+  body.login-page .prestadero-back-button {
+    top: 15px;
+    left: 15px;
+  }
+}

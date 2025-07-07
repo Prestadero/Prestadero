@@ -1,0 +1,144 @@
+.footer {
+  background: linear-gradient(90deg, #000000, #353535);
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  padding: 3rem 1.5rem 1.5rem;
+}
+
+.footer-top {
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  width: 180px;
+  height: auto;
+  max-width: 200px;
+}
+
+.footer-description {
+  color: #ffffff;   
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.footer-middle {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 2.5rem;
+}
+
+.footer-column-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  color: #ffff00;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+  color: #fff700;
+}
+
+.footer-subheading {
+  color: #ddd;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid #444;
+  text-align: center;
+}
+
+.footer-copyright {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1.5rem;
+  }
+  
+  .footer-logo {
+    margin: 0 auto 1rem;
+  }
+  
+  .footer-description {
+    margin: 0 auto;
+  }
+  
+  .footer-middle {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 3rem;
+  }
+}
+
+/* Modificación clave: 2 filas y 2 columnas en móviles */
+@media (max-width: 600px) {
+  .footer-middle {
+    /* Cambiamos a 2 columnas (que generarán 2 filas automáticamente) */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .footer-column {
+    text-align: center;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Ajuste para que los títulos estén centrados */
+  .footer-column-title {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Para pantallas muy pequeñas (menos de 400px) volvemos a 1 columna */
+@media (max-width: 400px) {
+  .footer-middle {
+    grid-template-columns: 1fr;
+  }
+}

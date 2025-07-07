@@ -1,0 +1,141 @@
+/* Contenedor general del formulario de crédito */
+.formulario-credito-container {
+  display: flex;
+  flex-direction: row-reverse; /* Formulario a la derecha */
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10rem 2rem 2rem;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(150deg, #ffcc00, #ffcc00);
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Formulario de solicitud de crédito */
+.formulario-solicita-credito {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  background-color: #000000;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #000000;
+}
+
+.formulario-solicita-credito h2 {
+  margin-bottom: 1.5rem;
+  color: #ffcc00;
+}
+.formulario-solicita-credito label{
+color: #ffcc00;
+
+}
+.formulario-solicita-credito select{
+  background-color:  #ffcc00;
+}
+.formulario-solicita-credito input{
+  background-color:  #ffcc00;
+  
+} 
+.formulario-solicita-credito input,
+.formulario-solicita-credito select {
+  width: 100%;
+  padding: 1%;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  margin-top: 0.3rem;
+  font-size: 1rem;
+  
+}
+
+
+/* Botón de enviar */
+#btn-enviar-credito {
+  margin-top: 1rem;
+  background-color: #ffcc00;
+  color: rgb(0, 0, 0);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+#btn-enviar-credito:hover {
+  background-color: #ffea00;
+}
+
+/* Simulador */
+.simulador {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  background: #000000;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid #1c1c1c;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.simulador h2 {
+  margin-bottom: 1.5rem;
+  color: #ffcc00;
+}
+
+.simulador label {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.simulador input[type="range"] {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.simulador p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #ffcc00;
+}
+
+/* Botones de cuotas */
+.selector-cuotas {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.btn-cuota {
+  flex: 1;
+  background: #ddd;
+  color: black;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-cuota.activa,
+.btn-cuota:hover {
+  background-color: #ffcc00;
+  color: rgb(33, 33, 33);
+}
+.simulador input[type="range"]::-webkit-slider-thumb {
+  background: #ffcc00; /* color del thumb */
+  border: 1px solid #ffcc00;
+}
+
+.simulador input[type="range"] {
+  accent-color: #ffcc00; /* para navegadores modernos */
+}

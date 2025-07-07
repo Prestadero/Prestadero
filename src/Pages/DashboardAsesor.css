@@ -1,0 +1,149 @@
+/* DashboardAsesor.css */
+
+.dashboard-asesor-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #ffcc00;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+.dashboard-asesor-sidebar {
+  width: 250px;
+  background-color: #161616;
+  color: #ffcc00;
+  padding: 20px;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+}
+
+.dashboard-asesor-sidebar h2 {
+  color: #ffcc00;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.dashboard-asesor-sidebar button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  text-align: left;
+  cursor: pointer;
+  font-size: 16px;
+  border-left: 4px solid transparent;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.dashboard-asesor-sidebar button:hover,
+.dashboard-asesor-sidebar button.active {
+  background-color: #000000;
+  border-color: #ffd700;
+  color: #ffcc00;
+}
+
+.dashboard-asesor-main {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.dashboard-asesor-main h1 {
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.dashboard-asesor-card {
+  background-color: #000000;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.dashboard-asesor-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.dashboard-asesor-card h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #ffcc00;
+}
+
+.dashboard-asesor-card p {
+  margin: 4px 0;
+  color: #e2e2e2;
+  font-size: 14px;
+}
+
+.dashboard-asesor-card select,
+.dashboard-asesor-card input,
+.dashboard-asesor-card textarea {
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.dashboard-asesor-card button {
+  background-color: #ffcc00;
+  border: none;
+  padding: 10px 96px;
+  font-weight: bold;
+  color: #1a1a2e;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.dashboard-asesor-card button:hover {
+  background-color: #e6c200;
+}
+
+.dashboard-asesor-estado-aprobado {
+  color: green;
+  font-weight: bold;
+}
+.dashboard-asesor-estado-rechazado {
+  color: red;
+  font-weight: bold;
+}
+.dashboard-asesor-estado-pendiente {
+  color: orange;
+  font-weight: bold;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.dashboard-asesor-disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .dashboard-asesor-container {
+    flex-direction: column;
+  }
+
+  .dashboard-asesor-sidebar {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .dashboard-asesor-main {
+    padding: 20px;
+  }
+}
+
